@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Mountain garden planner</title>
   </head>
@@ -12,7 +13,7 @@
         <h1>AI Mountain garden planner</h1>
       </header>
       <main>
-        <form action="">
+        <form id="planner-generator-form">
           <input
             type="text"
             placeholder="Enter the month you want to plan..."
@@ -24,7 +25,7 @@
           <input type="submit" class="submit-button" />
         </form>
       </main>
-      <div class="monthly-plan">The monthly plan will go here</div>
+      <div class="monthly-plan" id="plan">The monthly plan will go here</div>
 
       <footer>
         This project is coded by
