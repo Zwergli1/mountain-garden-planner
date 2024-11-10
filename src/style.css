@@ -20,16 +20,11 @@ footer {
 }
 
 form {
-  background-color: rgba(17, 155, 118, 0.445);
-  border-radius: 10px;
-  box-shadow: 0px 4px 30px 0px rgb(1, 73, 54);
   display: flex;
-  margin-bottom: 30px;
-  padding: 30px;
 }
 
 h1 {
-  color: #272044;
+  color: rgb(1, 73, 54);
   font-weight: 800;
   font-size: 36px;
   line-height: 1.5;
@@ -44,6 +39,18 @@ header {
   margin-bottom: 30px;
 }
 
+.hint {
+    color: rgb(1, 73, 54);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+.hidden {
+    display: hidden;
+}
+
 .input {
   border: 1px solid grey;
   color: #272044;
@@ -51,6 +58,14 @@ header {
   line-height: 20px;
   padding: 16px;
   width: 80%;
+}
+
+.input-container {
+   background-color: rgba(17, 155, 118, 0.445);
+  border-radius: 10px;
+  box-shadow: 0px 4px 30px 0px rgb(1, 73, 54);
+  margin-bottom: 30px;
+  padding: 30px; 
 }
 
 .monthly-plan {
@@ -63,6 +78,7 @@ header {
   line-height: 1.5;
   padding: 20px;
 }
+
 
 .submit-button {
   background-color: rgb(17, 155, 118);

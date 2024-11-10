@@ -14,21 +14,23 @@
         <h1>AI Mountain garden planner</h1>
       </header>
       <main>
-        <form id="planner-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the month you want to plan..."
-            autofocus
-            required
-            autocomplete="off"
-            class="input"
-            id="user-month-input"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
+        <div class="input-container">
+          <form id="planner-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the month you want to plan..."
+              autofocus
+              required
+              autocomplete="off"
+              class="input"
+              id="user-month-input"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e. January, June, September...</div>
+        </div>
       </main>
-      <div class="monthly-plan" id="plan"></div>
-
+      <div class="monthly-plan hidden" id="plan"></div>
       <footer>
         This project is coded by
         <a

@@ -16,6 +16,10 @@ function generatePlan(event) {
   let prompt = `Generate a list of advices on what to do in the garden in the month of ${monthInput.value}.`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let planElement = document.querySelector("#monthly-plan");
+  planElement.classList.remove("hidden");
+  planElement.innerHTML = `⏱️ Generating a plan for the month of ${monthInput.value} ⏳`;
+
   axios.get(apiUrl).then(displayMonthlyPlan);
 }
 
